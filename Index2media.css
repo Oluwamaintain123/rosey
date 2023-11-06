@@ -1,0 +1,161 @@
+@media (max-width: 870px) {
+
+    header nav{
+        gap: 8em;
+    }
+
+    header nav .barss{
+        display: block;
+    }
+
+    header nav ul{
+        display: block;
+        position: absolute;
+        top: 3.58em;
+        padding: 1em;
+        min-height: 100%;
+        background-color: #000;
+        width: 50%;
+        left: -100%;
+        align-items: center;
+        
+        
+        & li{
+            padding: 1em 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            color: #fff;
+            cursor: pointer;
+
+            & a{
+                color: #fff;
+            }
+        }
+    }
+
+    header nav ul.active{
+        left: 0;
+        transition: .2s;
+    }
+
+    /* ===BODY=== */
+
+    .body{
+        flex-direction: column;
+        align-items: center;
+
+        & .bod1{
+            align-items: center;
+            padding-top: 1em 0;
+            margin: 0;
+
+            & h1{
+                text-align: center;
+            }
+
+            & p{
+                width: 100% !important;
+                text-align: center;
+                padding: none;
+                margin: none;
+            }
+        }
+
+        & .bod2{
+            margin: 1em 0;
+        }
+    }
+
+    /* ===BODY1=== */
+
+    .body1{
+
+        & .cores{
+            
+            & .core{
+
+                & h3.question::after{
+                    content: '+';
+                    position: absolute; 
+                    right: 10em;
+                    cursor: pointer;
+                }
+
+            }
+            
+        }
+
+        
+    }
+
+    /* ===BODY2=== */
+
+    #body2 .feat2{
+        flex-direction: column;
+
+        & .feats i{
+            font-size: 3.4em;
+        }
+
+        & .feats h3{
+            font-size: 2em;
+        }
+
+    }
+
+    /* ===BODY3=== */ 
+
+    .body3{
+        
+        & h1{
+            text-align: center;
+            font-size: 2.5em;
+        }
+
+        & .lorems{
+            flex-direction: column;
+        }
+    }
+
+    /* ===BODY4=== */
+
+    .body4{
+
+        & h1{
+            font-size: 2.5em;
+        }
+
+        & .services{
+            flex-direction: column;
+            align-items: center;
+            margin: 0;
+            /* gap: 0; */
+        }
+
+        & button{
+            margin-bottom: 0;
+        }
+
+    }
+
+    #footer{
+
+        & h1{
+            font-size: 2.4em;
+        }
+
+        & .bodi{
+            flex-direction: column;
+            align-items: center;
+        }
+
+        & hr{
+            margin-top: 1em;
+        }
+    }
+
+
+
+
+}
